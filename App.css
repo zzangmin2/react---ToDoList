@@ -1,0 +1,120 @@
+html {
+  background-color: #f7f7f7;
+}
+.Page {
+  width: 400px;
+  height: 600px;
+  padding: 30px 40px 30px 40px;
+  box-shadow: 3px 4px 15px -5px rgba(0, 0, 0, 0.11);
+  border-radius: 30px;
+
+  margin: 0 auto;
+  margin-top: 40px;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Page .header {
+  width: 177px;
+  height: 57px;
+  margin-bottom: 20px;
+
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 57px;
+
+  color: #303030;
+}
+
+.Page .inputWrap {
+  display: flex;
+  height: 50px;
+}
+.Page .inputWrap .input {
+  width: 75%;
+  justify-content: start;
+
+  margin-right: 10px;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Page .inputWrap .button {
+  width: 25%;
+  justify-content: end;
+
+  background: #ffffff;
+  border: 1px solid #00c6e1;
+  border-radius: 5px;
+  color: #00c6e1;
+
+  cursor: pointer;
+}
+.Page .inputWrap .button:hover {
+  background: #00c6e1;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.Page .inputWrap input:focus {
+  transition: 0, 2s;
+  outline: 0;
+  border: 1px solid #00c6e1;
+}
+
+/* List */
+.List h4 {
+  color: #00c6e1;
+  margin: 40px 0px 0px 0px;
+}
+/* Item */
+.listWrap {
+  display: flex;
+  padding: 20px 10px 20px 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+.listWrap .listCheck {
+  width: 5%;
+}
+.listWrap .listText {
+  width: 70%;
+  justify-content: start;
+  margin-left: 10px;
+  color: #303030;
+}
+
+.listWrap .buttonWrap {
+  width: 25%;
+  justify-content: end;
+}
+
+.listWrap .buttonWrap .removeButton {
+  margin-left: 5px;
+  border: none;
+  background-color: #ffffff;
+  color: #d0d0d0;
+
+  cursor: pointer;
+}
+
+.listWrap .buttonWrap .removeButton:hover {
+  color: #ff4a4a;
+}
+
+.listWrap .buttonWrap .importantButton {
+  border: none;
+  background-color: #ffffff;
+  color: #d0d0d0;
+
+  cursor: pointer;
+}
+
+.listWrap .buttonWrap .importantButton:hover {
+  color: #00c6e1;
+}
