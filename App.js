@@ -24,6 +24,7 @@ function App() {
     const newItem = state;
     setData([newItem, ...data]);
   };
+
   return (
     <div className="App">
       <Page onCreate={onCreate} data={dummyList} />

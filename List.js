@@ -1,10 +1,19 @@
 import { useState } from "react";
 
 const List = ({ data }) => {
-  const [important, setImportant] = useState(false);
+  const [items, setItems] = useState(data);
 
-  const handleImportant = () => {};
+  const handleRemove = () => {
+    {
+      const onRemove = () => {
+        items.filter((it) => it.id !== setItems.targetId);
+      };
 
+      if (window.confirm(id + "번째 일기를 정말 삭제하시겠습니까")) {
+        onRemove(id);
+      }
+    }
+  };
   return (
     <div className="List">
       <h4>할 일 {data.length}개 남음</h4>
@@ -15,10 +24,10 @@ const List = ({ data }) => {
             <input className="listCheck" type="checkbox" />
             <div className="listText">{it.content}</div>
             <div className="buttonWrap">
-              <button className="importantButton" onClick={handleImportant}>
-                중요
+              <button className="importantButton">중요</button>
+              <button className="removeButton" onClick={handleRemove}>
+                삭제
               </button>
-              <button className="removeButton">삭제</button>
             </div>
           </div>
         </div>
